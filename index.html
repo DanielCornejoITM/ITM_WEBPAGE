@@ -8,9 +8,14 @@
       <!-- CSS -->
       <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="estilos.css">
+       <!-- CSS TIMELINE-->
+    
+        <link rel="stylesheet" href="style.css">
+      
    </head>
    <body>
       <header>
+         <!--  Aqui Empieza la barra de Navegacion-->
          <nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
             <div class="container">
                <div class="navbar-header">
@@ -83,10 +88,12 @@
       </header>
       <!-- Contenido -->
       <main class="page">
+         <!-- Esta es la imagen grande tipo banner Se edita desde css -->
          <div  class="flag-banner hidden-xs" id="static_banner"> 
          </div>
          <div class="anchor"></div>
          <div class="container">
+            <!-- Estas son los destacados -->
             <h1>Destacados</h1>
             <div class="row">
                <div id="Promo1"class="col-md-8">
@@ -114,9 +121,11 @@
                   <h1>HOla LOyo</h1>
                </div>
             </div>
+            <!-- Estas son las Seccion de Antec-->
             <h3>Antec</h3>
             <hr class="red">
             <div class="row">
+               <!-- Esta es la imagen de Antec-->
                <div id="ANTEC" class="col-md-6 col-md-offset-3">
                   <img src="img/logo-web.png" alt="Antec-Logo">
                </div>
@@ -127,12 +136,14 @@
                   <h3>Noticia</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima itaque aspernatur laborum perspiciatis earum, ut molestias laboriosam voluptate nesciunt magni! Illum consectetur hic provident! Molestiae dolor cupiditate impedit eligendi excepturi! </p>
                </div>
+               <!--Imagen de la  Ultima noticia publicada por Antec-->
                <div class="ANPrinc col-md-4">
                   <img src="img/Lona.jpg">
                </div>
                <div class="col-md-4">
                </div>
                <div class="row">
+                  <!--Mini Noticias-->
                   <div  class="col-md-4">
                      <div class="row">
                         <div class="col-md-6">
@@ -142,7 +153,7 @@
                            <h4>Antec Noticia </h4>
                         </div>
                      </div>
-                      <div class="row">
+                     <div class="row">
                         <div class="col-md-6">
                            <img class="_small"src="img/Lona.jpg">
                         </div>
@@ -150,7 +161,7 @@
                            <h4>Antec Noticia </h4>
                         </div>
                      </div>
-                      <div class="row">
+                     <div class="row">
                         <div class="col-md-6">
                            <img class="_small"src="img/Lona.jpg">
                         </div>
@@ -158,15 +169,89 @@
                            <h4>Antec Noticia </h4>
                         </div>
                      </div>
-              
-                  </div>
-               </div>
+               <!--Termina Mini Noticias-->
             </div>
+            <!--Termina ANTEC-->
          </div>
+                
          </div>
+         <h3>Avisos y Eventos</h3>
+            <hr class="red">
+             <!--inicio timeline-->
+             
+        <section class="timeline">
+          <ol>
+            <li>
+              <div>
+                <time>01 SEP</time>Inscripciones de aspirantes colocados por Examen de clasificación al programa de Lenguas Extanjeras para Público en General.
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>01 SEP</time>Inscripción a cursos al programa de otoño 2017 Inglés para NIÑOS PRIMER NIVEL.
+
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>04 SEP</time>Inscripciones PRIMER NIVEL para el programa de Lenguas Extranjeras para PÚBLICO EN GENERAL.
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>04 SEP</time>Inicio de cursos del programa de Septiembre de Inglés INTERNO de Lenguas Extranjeras.
+
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>04-08 SEP</time>Periodo de recpción de solicitudes de ACREDITACIÓN DE IDIOMA EXTRANJERO TÉCNICO.
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>21-25 AGO</time>Diplomado: Formación de Gestores para la Inovación.
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>25 AGO</time>Reunión con los padres de familia de los alumnos de Nuevo Ingreso de la modalidad escolarizada.
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+              </div>
+            </li>
+            
+          </ol>
+
+          <div class="arrows">
+            <button id="btn" class="arrow arrow__prev disabled" disabled>
+              <img src="icons/back.svg" alt="prev timeline arrow">
+            </button>
+            <button id="btn" class="arrow arrow__next">
+              <img src="icons/next.svg" alt="next timeline arrow">
+            </button>
+          </div>
+        </section>
+             
+             <!-- fin timeline-->
+             
+             
          </div>
       </main>
       <!-- JS -->
       <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+       
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
+
+    <script src="index.js"></script>
+       
    </body>
 </html>
